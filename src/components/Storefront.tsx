@@ -131,7 +131,7 @@ export default function Storefront({ initialProducts }: { initialProducts: Produ
                 </div>
                 <span className="font-medium hidden lg:block text-gray-700 dark:text-slate-200">{session.user?.name}</span>
                 <button 
-                  onClick={() => signOut()} 
+                  onClick={() => signOut({ callbackUrl: '/' })} 
                   className="p-1 ml-1 transition-colors text-gray-400 hover:text-red-500 dark:text-slate-400 dark:hover:text-red-400"
                 >
                   <LogOut className="w-5 h-5" />
